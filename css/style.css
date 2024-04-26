@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Config Site Top */
+
+body {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  background: #fff url('../img/fundo.png') repeat-x;
+}
+
+#container {
+  width: 750px;
+  margin: 0 auto 20px auto;
+}
+
+header {
+  background: #294C71 url('../img/detalhe-topo.png') no-repeat right top;
+  height: 175px;
+  padding-top: 25px;
+}
+
+.logo {
+  width: 152px;
+  height: 66px;
+  text-indent: -3000px;
+  background: url('../img/logo1.png');
+  background-size: contain;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  margin-top: 35px;
+}
+
+header li a{
+  padding: 0.8em 1.35em;
+  background-color: #B20030;
+  background-image: url('../img/divisor.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9em;
+}
+
+header li a:hover {
+  color: #790021;
+}
+
+#home header .home a,
+#brazil header .brazil a,
+#internacional header .internacional a,
+#economy header .economy a,
+#health header .health a,
+#cience header .cience a,
+#photos header .photos a {
+  background-color: #E10039;
+  background-image: none;
+}
+
+.first-a {
+  background-image: none;
+}
+
+/* Config Site Content Structure */
+#content {
+  margin: 60px 0 0 0;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+
+#content-info {
+  display: flex;
+}
+
+#first {
+  width: 270px;
+  margin: 0 0 0 15px; 
+}
+
+.two-columns #first {
+  width: 555px;
+  margin: 0 0 0 15px; 
+}
+
+.one-column #first {
+  width: 750px;
+}
+
+#second {
+  width: 270px;
+  margin: 0 0 0 15px;
+}
+
+#side {
+  width: 180px;
+}
+
+/* Config Content Details */
+.box {
+  background: #f3f3f3 url('../img/fundo-caixa.png');
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.box h2 {
+  background-color: #294C71;
+  color: #fff;
+  padding: 5px;
+  font-size: 1em;
+}
+
+.box-content {
+  background-color: #fefefe;
+  margin-top: 5px;
+  padding: 5px 0;
+}
+
+/* Config Footer */
+footer {
+  clear: both;
+  background: #294C71;
+  padding: 20px;
+}
+
+#footer {
+  width: 750px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+}
+
+/* Config SideBar */
+
+#side ul {
+  list-style: none;
+}
+
+#side li {
+  margin: 0.75em;
+}
+
+#side li a{
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+#side li a:hover {
+  background: #fff url('../img/marcador.png') no-repeat left center;
+  color: #acacac;
+  padding-left: 1.45em;
+}
+
+#email-content {
+  margin: 0.5em;
+  width: 100%;
+}
+
+#email-content input[type="text"] {
+  width: 90%;
+  margin: 10px auto;
+  padding-left: 5px;
+  background: #fefefe;
+  border: 1px solid #000;
+}
+
+#email-content input[type="submit"] {
+  width: 50%;
+  height: 28px;
+  background: #B20030;
+  color: #fff;
+  border: 2px solid #790021;
+  cursor: pointer;
+}
+
+#email-content input[type="submit"]:hover {
+  color: #790021;
+}
+
+/* Config Second News */
+
+#second .box-content,
+#first .box-content {
+  padding-top: 0.5em;
+}
+
+#second h3 {
+  background: #B20030;
+  color: #fff;
+  display: inline;
+  font-size: 0.9em;
+  padding: 0.1em;
+  text-transform: uppercase;
+  margin: 0.5em;
+  text-align: center;
+}
+
+#second .big-img {
+  width: 95%;
+  margin: 0.4em;
+  border: 3px solid #cecece;
+}
+
+#second h3 ~ p {
+  margin: 0 0.5em 0.3em 0.5em;
+}
+
+#second a {
+  color: #B20030;
+  margin-left: 0.5em;
+}
+
+/* Config Main News */
+#first h3 {
+  background: #E10039;
+  color: #222;
+  display: inline;
+  font-size: 0.9em;
+  padding: 0.1em;
+  text-transform: uppercase;
+  margin: 0.5em;
+  text-align: center;
+}
+
+#first .big-img {
+  width: 95%;
+  margin: 0.4em;
+  border: 3px solid #cecece;
+}
+
+#first h3 ~ p {
+  margin: 0 0.5em 0.3em 0.5em;
+}
+
+#first a {
+  color: #B20030;
+  margin-left: 0.5em;
+}
+
+/* Config Small News */
+.small-content {
+  width: 100%;
+  display: flex;
+  padding: 0.3em 0.3em 0.5em 0.3em;
+}
+
+hr {
+  width: 97.5%;
+  margin: 0 auto;
+}
+
+.small-content img {
+  width: 40%;
+  height: 40%;
+}
+
+.small-content h4 {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  color: #294C71;
+  text-align: center;
+  padding-right: 1.5em;
+  overflow-x: hidden;
+}
+
+.small-content div p {
+  padding-top: 0.3em;
+  font-size: 0.8em;
+}
+
+.small-content div {
+  padding: 0 0 0 0.3em;
+}
